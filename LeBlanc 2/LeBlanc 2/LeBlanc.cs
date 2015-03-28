@@ -17,7 +17,7 @@ namespace LeBlanc_2
 
         public static void Init()
         {
-            Game.OnGameUpdate += OnGameUpdate;
+            Game.OnUpdate += OnGameUpdate;
             Interrupter2.OnInterruptableTarget += OnPossibleToInterrupt;
             AntiGapcloser.OnEnemyGapcloser += OnEnemyGapcloser;
         }
