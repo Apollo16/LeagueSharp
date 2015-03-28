@@ -53,7 +53,7 @@ namespace LeBlanc_2
             LeBlancConfig.SubMenu("MenuAssassin")
                 .AddItem(new MenuItem("AssassinSearchRange", "Search Range")).SetValue(new Slider(1000, 2000));
 
-            Game.OnGameUpdate += OnGameUpdate;
+            Game.OnUpdate += OnGameUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
             Game.OnWndProc += Game_OnWndProc;
         }
